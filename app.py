@@ -109,9 +109,9 @@ with col_chat:
                         resposta = st.session_state.chat_gemini.send_message(prompt)
                         st.markdown("✅ Análise concluída! Gráficos atualizados ao lado.")
                         st.session_state.mensagens.append({"role": "assistant", "content": resposta.text})
-                        st.rerun()
                     except Exception as e:
                         st.error(f"Ocorreu um erro técnico: {e}")
+        st.rerun()
 
 # === COLUNA 2: DASHBOARD GRÁFICO ===
 with col_resultados:
