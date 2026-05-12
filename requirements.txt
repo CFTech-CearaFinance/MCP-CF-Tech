@@ -1,7 +1,6 @@
-pandas<2.0.0
-numpy<2.0.0
 streamlit
 google-generativeai
+pandas
 yfinance
 pandas-ta
 scikit-learn
